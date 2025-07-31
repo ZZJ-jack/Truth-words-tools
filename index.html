@@ -81,7 +81,7 @@
       dlg.style.justifyContent = 'center';
       dlg.innerHTML = `
         <div style="background:#fff;border-radius:12px;box-shadow:0 2px 12px #0002;padding:28px 22px 18px 22px;max-width:340px;min-width:220px;">
-          <div style="font-size:15px;color:#1976d2;margin-bottom:6px;">题目编号：${(idx+1)}</div>
+          <div style="font-size:15px;color:#1976d2;margin-bottom:6px;">题目编号：${(idx)}</div>
           <div style="font-size:16px;color:#333;word-break:break-all;margin-bottom:18px;">${text}</div>
           <button class="btn" onclick="navigator.clipboard.writeText(\`${text.replace(/`/g, '\\`')}\`)">复制问题</button>
           <button class="btn" onclick="this.parentNode.parentNode.remove()">关闭</button>
