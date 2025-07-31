@@ -50,7 +50,7 @@
       currentIdx = idx;
       let shortQ = currentFull.length > 20 ? currentFull.slice(0, 20) + "..." : currentFull;
       document.getElementById('question').innerText = shortQ;
-      document.getElementById('questionNo').innerText = "题目编号：" + (idx + 1);
+      document.getElementById('questionNo').innerText = "题目编号：" + idx;
     }
 
     function copyQuestion() {
