@@ -22,16 +22,18 @@
 
     // 读取 title.txt
     function loadQuestionsFromTxt() {
-      fetch('title.txt')
-        .then(response => response.text())
-        .then(text => {
-          questions = text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
-          nextQuestion();
-        })
-        .catch(() => {
-          document.getElementById('question').innerText = "无法加载 title.txt";
-        });
-    }
+    // 替换为你的 Gitee 用户名、仓库名和分支名
+    const giteeRawUrl = 'https://gitee.com/zzj-jack/drive/blob/main/title.txt';
+    fetch(giteeRawUrl)
+      .then(response => response.text())
+      .then(text => {
+        questions = text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+        nextQuestion();
+      })
+      .catch(() => {
+        document.getElementById('question').innerText = "无法加载 Gitee 仓库的 title.txt";
+      });
+  }
 
     function randomIndex() {
       return Math.floor(Math.random() * questions.length);
