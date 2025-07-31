@@ -23,7 +23,7 @@
     // 读取 title.txt
     function loadQuestionsFromTxt() {
     // 替换为你的 Gitee 用户名、仓库名和分支名
-    const giteeRawUrl = 'https://gitee.com/zzj-jack/drive/blob/main/title.txt';
+    const giteeRawUrl = 'https://raw.githubusercontent.com/ZZJ-jack/Drive/refs/heads/main/title.txt';
     fetch(giteeRawUrl)
       .then(response => response.text())
       .then(text => {
