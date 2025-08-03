@@ -1,11 +1,12 @@
 body {
   background: #f7f7fa;
-  font-family: '微软雅黑', 'Arial', sans-serif;
+  font-family: "微软雅黑", "Arial", sans-serif;
   color: #222;
   margin: 0;
   padding: 0;
   text-align: center;
 }
+
 .container {
   margin: 40px auto 0;
   background: #fff;
@@ -14,6 +15,7 @@ body {
   width: 380px;
   padding: 32px 18px 24px 18px;
 }
+
 .title {
   font-size: 22px;
   color: #1a73e8;
@@ -21,6 +23,7 @@ body {
   letter-spacing: 2px;
   font-weight: bold;
 }
+
 .question {
   font-size: 18px;
   color: #333;
@@ -34,9 +37,18 @@ body {
   word-break: break-all;
   border: 1px solid #e0e0e0;
 }
+
+.questionNo {
+  color: #1976d2;
+  font-size: 15px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
 .question:hover {
   background: #e3f0fd;
 }
+
 .btn {
   font-size: 15px;
   padding: 7px 22px;
@@ -49,10 +61,12 @@ body {
   transition: background 0.2s;
   outline: none;
 }
+
 .btn:hover {
   background: #bcdffb;
   color: #1a73e8;
 }
+
 .tips {
   font-size: 13px;
   color: #888;
